@@ -1,0 +1,27 @@
+<app-add-button (onAddButton)="addButton($event)"></app-add-button><br />
+<app-button *ngFor="let b of buttons" [buttonItem]="b"></app-button>
+
+<!-- <button class="btn btn-primary" [disabled]="isButtonDisabled">Disabled</button>
+<p>{{ inputText }}</p>
+<input
+  type="text"
+  class="form-control"
+  #myInput
+  (keyUp.enter)="getInput($event)"
+/>
+<p *ngIf="inputText; else emptyParagraph">Параграф не пустой</p>
+<ng-template #emptyParagraph>
+  <p>Параграф пуст</p>
+</ng-template>
+ -->
+<!-- <ul>
+  <li *ngFor="let item of buttons; let idx = index">
+    <div
+      [ngStyle]="{
+        color: idx % 2 == 0 ? 'green' : 'red'
+      }"
+    >
+      <i>{{ idx }} </i><b>{{ item | date }} </b>
+    </div>
+  </li>
+</ul> -->

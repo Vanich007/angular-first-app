@@ -1,0 +1,10 @@
+<br /><button
+  class="btn"
+  [ngClass]="{
+    'btn-primary': buttonItem === 'primary',
+    'btn-secondary': buttonItem === 'secondary',
+    'btn-danger': buttonItem === 'danger'
+  }"
+>
+  {{ buttonItem }}
+</button>
